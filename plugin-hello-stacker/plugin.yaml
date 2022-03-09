@@ -1,0 +1,4 @@
+name: plugin-hello-stacker
+description: Plugin to add capacity to hello stacker app to ask stacker name before say hello
+types:
+  - app
