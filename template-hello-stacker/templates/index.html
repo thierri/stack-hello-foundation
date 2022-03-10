@@ -1,8 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>My App: {{inputs.project_name}}</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var name = prompt("What is you name stacker?")
+            document.body.innerHTML = document.body.innerHTML.replace('Stacker', name);
+        });
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+        html {
+            background-color: #F2F2F7;
+            font-family: 'Montserrat';
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 600px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .illustration {
+            margin-top: 50px;
+            margin-bottom: 35px;
+        }
+
+        .title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .button {
+            color: #F56300;
+            border: 1px solid #F56300;
+            background-color: transparent;
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 12px 14px;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-flex;
+        }
+
+        .description {
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    {{ inputs.greeting_message }} Stacker!
+<div class="wrapper">
+    <a href="https://www.stackspot.com" class="logo" target="_blank" rel="noopener noreferrer">
+        <img src="logo.png" alt="StackSpot" />
+    </a>
+
+    <div class="illustration">
+        <img src="img.png" alt="illustration" />
+    </div>
+
+    <div>
+        <h1 class="title">{{ inputs.greeting_message }} Stacker!</h1>
+        <p class="description">
+            <br>Parabéns por chegar até aqui! </br>
+            <br>Agora que você já conhece nosso produto, que tal criar algo de verdade!
+            </br>
+            <br>Utilizando nossos estúdios você conseguirá criar uma API em minutos, bora tentar?</br></p>
+    </div>
+
+    <a href="https://www.stackspot.com/studios" class="button" target="_blank" rel="noopener noreferrer">Visitar Estúdios </a>
+</div>
 </body>
 </html>
