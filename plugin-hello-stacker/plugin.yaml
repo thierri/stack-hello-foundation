@@ -1,4 +1,4 @@
-name: plugin-hello-stacker
-description: Plugin to add capacity to hello stacker app to ask stacker name before say hello
+name: plugin-manifesto-istio
+description: Plugin para adicionar o manifesto ISTIO na aplicação.
 types:
   - app
