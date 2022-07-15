@@ -1,0 +1,5 @@
+type: app
+description: Aplicação Exemplo para carregar manifestos da Foundation ICAAS
+template: stack-hello-foundation/template-hello-stacker
+plugins:
+  - plugin: stack-hello-foundation/plugin-manifesto-istio
