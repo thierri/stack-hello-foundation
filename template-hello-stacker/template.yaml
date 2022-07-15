@@ -7,12 +7,12 @@ inputs:
     type: text
     name: project_name
 
-  - label: Greeting message to use
+  - label: Qual service-mesh utilizar?
     type: text
     name: greeting_message
-    default: Hello
+    default: Istio
     items:
-      - Hello
-      - Whats up
-      - Hi
-      - Good morning
+      - Istio
+      - Linkerd
+      - Consul
+      - Kuma
