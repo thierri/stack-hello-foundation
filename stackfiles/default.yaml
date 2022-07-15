@@ -1,3 +1,3 @@
 type: app
-description: HTML example application created with stackfile using only template hello stacker
+description: Aplicação Exemplo para piloto Foundation ICAAS
 template: stack-hello-stacker/template-hello-stacker
