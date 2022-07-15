@@ -1,5 +1,5 @@
 type: app
-description: HTML example application created with stackfile using template hello stacker and applying the plugin hello stacker
+description: Aplicação Exemplo para carregar manifestos da Foundation ICAAS
 template: stack-hello-stacker/template-hello-stacker
 plugins:
   - plugin: stack-hello-stacker/plugin-hello-stacker
